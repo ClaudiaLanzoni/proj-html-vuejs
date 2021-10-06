@@ -1,5 +1,5 @@
 <template>
-    <div>
+        <header>
         <div class="blog_specifications_nav_wrap">
             <div class="container">
                 <!-- common blog specifications menu section-->
@@ -33,7 +33,7 @@
                 </nav>
             </section>
         </div>
-    </div>
+    </header>
 
     
 </template>
@@ -55,6 +55,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../style/variables.scss";
+
+    header {
+        margin-bottom: 50px
+    }
 
     ul {
         list-style-type: none;

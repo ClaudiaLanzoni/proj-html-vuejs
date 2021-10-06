@@ -1,18 +1,19 @@
 <template>
     <div>
-
-        <div class="topic_container">
+        <div class="topic_card_container">
+           
             <img :src="topic.imgBgPath">
-            <div>{{topic.topic}}</div>
-            <div>{{topic.title}}</div>
-        
-       <!--
-           <div :style="{ 'background-image': `url(${element.src})` }"></div>
-           <img :src="element.src">
-            <div v-bind:style="{ 'background-image': 'url(../assets/images/img/blog-46.jpg)' }"></div>
-        -->
+            
+            <button class="bottom_left_topic btn btn-primary">{{topic.topic}}</button>
+            <h6 class="bottom_left_title">{{topic.title}}</h6>
+
         </div>
-    </div>
+           
+        <!-- <img :src="element.src"> -->
+        <!-- <div :style="{ 'background-image': 'url(' + require(`../assets/img/${imgBgPath}`) + ')' }"></div> -->
+        <!--<div v-bind:style="{ 'background-image': 'url(../assets/images/img/blog-46.jpg)' }"></div>-->
+    
+    </div>      
 </template>
 
 <script>
@@ -21,7 +22,7 @@ export default {
     props : ['topic'],
     data : function () {
         return {
-        
+        backgroundimg : true
     }
     }
 }
@@ -30,15 +31,34 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 
-.topic_container {
-    width: 200px;
-    height: 200px;
-    border: 3px solid black;
-
     img {
-        width: 70%;
-        height: 50%;
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        filter: brightness(50%);
     }
-}
 
+    .topic_card_container {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .bottom_left_topic {
+        position: absolute;
+        bottom: 60px;
+        left: 16px;
+        color: $whiteColor;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    .bottom_left_title {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        color: $whiteColor;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
 </style>
