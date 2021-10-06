@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main msg="Welcome to Your Vue.js App"/>
+    <Main />
     <Footer />
   </div>
 </template>
@@ -23,7 +23,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import'~bootstrap/scss/bootstrap';
+@import "./style/variables.scss";
+/*
 #app {
   background-color: white;
 }
+*/
 </style>

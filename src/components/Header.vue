@@ -1,32 +1,38 @@
 <template>
     <div>
-        <!-- common blog specifications menu section-->
-        <section> 
-            
-            <nav> 
-                <p>Everything about Lifestyle, Travel and Gadgets!</p>
+        <div class="blog_specifications_nav_wrap">
+            <div class="container">
+                <!-- common blog specifications menu section-->
+                <section> 
+                    
+                    <nav> 
+                        <p>Everything about Lifestyle, Travel and Gadgets!</p>
 
-                <ul v-for="(element, index) in blog_specification_nav" :key="index">
-                    <li>{{element}}</li>
-                </ul>
-            </nav>
+                        <ul v-for="(element, index) in blog_specification_nav" :key="index">
+                            <li>{{element}}</li>
+                        </ul>
+                    </nav>
 
-        </section>
+                </section>
+            </div>   
+        </div> 
 
-        <!-- blog logo section -->
-        <section> 
-            <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
-        </section>
+        <div class="container">
+            <!-- blog logo section -->
+            <section> 
+                <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
+            </section>
 
-        <!-- blog interaction menu section  -->
+            <!-- blog interaction menu section  -->
 
-        <section>
-            <nav>
-                <ul v-for="(element, index) in blog_interaction_nav" :key="index">
-                        <li>{{element}}</li>
-                </ul>
-            </nav>
-        </section>
+            <section>
+                <nav>
+                    <ul v-for="(element, index) in blog_interaction_nav" :key="index">
+                            <li>{{element}}</li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </div>
 
     
@@ -48,6 +54,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/variables.scss";
+
     ul {
         list-style-type: none;
         display: inline-block;
@@ -56,5 +64,9 @@ export default {
 
     p {
         display: inline-block;
+    }
+
+    .blog_specifications_nav_wrap {
+        background-color: $headerBg;
     }
 </style>
