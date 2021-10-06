@@ -1,5 +1,6 @@
 <template>
     <div>
+
         <div class="topic_card_container">
            
             <img :src="topic.imgBgPath">

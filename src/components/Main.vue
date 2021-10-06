@@ -1,21 +1,47 @@
 <template>
-  <div>
     <main>
       <div class="container">
             <div class="row">
-              
-                  
               <CardJumbotron class="col-4 d-flex justify-content-between" 
               v-for="(element, index) in topicCard" :key="index" :topic="element"/>
-                
-          
+          </div>
+
+          <div class="row">
+            <div class="col-4 posts_collection">
+
+              <h6>Popular posts</h6>
+              <div v-for="(element, index) in postsCollection" :key="index">
+                <img :src="element.imgPost" alt="post image">
+                <div class="caption_img_post">
+                  <div>{{element.titlePost}}</div>
+                  <div>{{element.datePost}}</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 posts_collection">
+                <h6>Recent posts</h6>
+                <div>
+                  
+                  <img src="" alt="">
+                  <p></p>
+                  <p></p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                  <h6>Featured posts</h6>
+                  <img src="" alt="">
+                  <p></p>
+                  <p></p>
+                </div>
+            </div>
           </div>
       </div>
+
+      
     </main>
-   
-
-
-  </div>
 </template>
 
 <script>
@@ -62,9 +88,36 @@ export default {
         topic : 'recipes',
         title : 'amazingly fresh fruit and herbs drinks for summer'
         },
-        ]
-        
-        
+        ],
+
+      postsCollection : [
+        {
+          imgPost : require('../assets/images/img/blog-55.jpg'),
+          titlePost : 'Simple ways to have a pretty face',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-56.jpg'),
+          titlePost : 'Ranking the greatest players in basketball',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-57.jpg'),
+          titlePost : '4 ways to look Cool in glasses',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-58.jpg'),
+          titlePost : 'Top Camper Trailer Towing Tips',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-59.jpg'),
+          titlePost : '5 lovely walks in New York',
+          datePost : 'January 12, 2019'
+        }
+      ],
+
 
     
   }
@@ -76,5 +129,24 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 
+  .posts_collection {
+    
+    img {
+      width: 50px;
+      height: 50px;
+    }
 
+    p {
+
+      font-size: 12px;
+    }
+
+    div {
+      font-size: 10px;
+    }
+  }
+
+    .caption_img_post {
+      display: inline-block;
+    }
 </style>
