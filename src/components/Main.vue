@@ -8,9 +8,8 @@
 
           <div class="row">
             <div class="col-4 posts_collection">
-
               <h6>Popular posts</h6>
-              <div v-for="(element, index) in postsCollection" :key="index">
+              <div v-for="(element, index) in popularPostsCollection" :key="index">
                 <img :src="element.imgPost" alt="post image">
                 <div class="caption_img_post">
                   <div>{{element.titlePost}}</div>
@@ -21,12 +20,13 @@
 
             <div class="col-4 posts_collection">
                 <h6>Recent posts</h6>
-                <div>
-                  
-                  <img src="" alt="">
-                  <p></p>
-                  <p></p>
-                </div>
+                <div v-for="(element, index) in recentPostsCollection" :key="index">
+                  <img :src="element.imgPost" alt="post image">
+                  <div class="caption_img_post">
+                    <div>{{element.titlePost}}</div>
+                    <div>{{element.datePost}}</div>
+                  </div>
+              </div>
             </div>
 
             <div class="col-4">
@@ -90,7 +90,7 @@ export default {
         },
         ],
 
-      postsCollection : [
+      popularPostsCollection : [
         {
           imgPost : require('../assets/images/img/blog-55.jpg'),
           titlePost : 'Simple ways to have a pretty face',
@@ -118,7 +118,33 @@ export default {
         }
       ],
 
-
+      recentPostsCollection : [
+        {
+          imgPost : require('../assets/images/img/blog-65.jpg'),
+          titlePost : 'Main Reasons To Stop Texting And Driving',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-66.jpg'),
+          titlePost : 'Tips to help you quickly prepare your lunch',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-67.jpg'),
+          titlePost : 'Why should I buy a smartwatch?',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-68.jpg'),
+          titlePost : 'The best augmented reality smartglasses',
+          datePost : 'January 12, 2019'
+        },
+        {
+          imgPost : require('../assets/images/img/blog-69.jpg'),
+          titlePost : '12 Healthiest Food To Eat for Breakfast',
+          datePost : 'January 12, 2019'
+        }
+      ]
     
   }
 }
@@ -134,6 +160,7 @@ export default {
     img {
       width: 50px;
       height: 50px;
+      margin: 15px 10px 20px 0;
     }
 
     p {
