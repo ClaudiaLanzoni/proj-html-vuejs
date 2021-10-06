@@ -23,7 +23,7 @@ export default {
     props : ['topic'],
     data : function () {
         return {
-        backgroundimg : true
+     
     }
     }
 }

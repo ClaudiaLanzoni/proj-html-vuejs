@@ -30,12 +30,14 @@
             </div>
 
             <div class="col-4">
-                <div>
+                
                   <h6>Featured posts</h6>
-                  <img src="" alt="">
-                  <p></p>
-                  <p></p>
-                </div>
+                  <div  class="recipe_img">
+                    <img src="../assets/images/img/blog-66 (1).jpg" alt="recipe post image">
+                    <button class="bottom_left_topic btn btn-primary">Recipes</button>
+                    <h6 class="bottom_left_title">Tips to help you quickly prepare your lunch</h6>
+                  </div>
+                
             </div>
           </div>
       </div>
@@ -144,7 +146,9 @@ export default {
           titlePost : '12 Healthiest Food To Eat for Breakfast',
           datePost : 'January 12, 2019'
         }
-      ]
+      ],
+
+
     
   }
 }
@@ -176,4 +180,37 @@ export default {
     .caption_img_post {
       display: inline-block;
     }
+
+    .recipe_img {
+        position: relative;
+        margin-top: 20px;
+
+        img {
+            width: 350px;
+            height: 150px;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+    }
+
+    .bottom_left_topic {
+        position: absolute;
+        bottom: 40px;
+        left: 16px;
+        color: $whiteColor;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    .bottom_left_title {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        color: $whiteColor;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+
 </style>
