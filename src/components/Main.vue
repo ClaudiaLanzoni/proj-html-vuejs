@@ -71,7 +71,8 @@
       <div class="container">
         <div class="row">
 
-          <CardPost class="col-9"/>
+          <CardPost class="col-9"
+          v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
         </div>
       </div>
@@ -204,9 +205,27 @@ export default {
           topicName : 'Travel'
         }
 
-      ]
+      ],
 
-    
+      postsCard : [
+        {
+          img : require('../assets/images/img/blog-54.jpg'),
+          postTitle : 'How to make friends as a grown-up'
+        },
+        {
+          img : require('../assets/images/img/blog-55 (1).jpg'),
+          postTitle : 'Simple Ways to Have a Pretty Face'
+        },
+        {
+          img : require('../assets/images/img/blog-56 (1).jpg'),
+          postTitle : 'Ranking the greatest players in basketball'
+        },
+        {
+          img : require('../assets/images/img/blog-58 (1).jpg'),
+          postTitle : 'Top Camper Trailer Towing Tips'
+        },
+
+      ]
   }
 }
 }
