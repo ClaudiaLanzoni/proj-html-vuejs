@@ -1,10 +1,10 @@
 <template>
         <header>
+
+        <!-- Common blog specifications menu section-->
         <div class="blog_specifications_nav_wrap">
             <div class="container">
-                <!-- common blog specifications menu section-->
                 <section> 
-                    
                     <nav> 
                         <p>Everything about Lifestyle, Travel and Gadgets!</p>
 
@@ -17,14 +17,14 @@
             </div>   
         </div> 
 
+        <!-- Blog logo section -->
         <div class="container">
-            <!-- blog logo section -->
+            
             <section> 
                 <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
             </section>
 
-            <!-- blog interaction menu section  -->
-
+        <!-- Blog interaction menu section  -->
             <section>
                 <nav>
                     <ul v-for="(element, index) in blog_interaction_nav" :key="index">

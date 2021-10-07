@@ -1,8 +1,11 @@
 <template>
     <div>
-
+        <!--Jumbotron card topic based component-->
         <div class="topic_card_container">
-           
+
+        <!--div style not working, used img inside relative container
+            and elements positioned inside it as absolute-->
+
             <img :src="topic.imgBgPath">
             
             <button class="bottom_left_topic btn btn-primary">{{topic.topic}}</button>
@@ -10,7 +13,8 @@
 
         </div>
            
-        <!-- <img :src="element.src"> -->
+        <!--attemps to make div style work-->
+        
         <!-- <div :style="{ 'background-image': 'url(' + require(`../assets/img/${imgBgPath}`) + ')' }"></div> -->
         <!--<div v-bind:style="{ 'background-image': 'url(../assets/images/img/blog-46.jpg)' }"></div>-->
     

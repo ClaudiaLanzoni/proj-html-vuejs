@@ -1,12 +1,15 @@
 <template>
     <main>
       <div class="container">
+        <!-- Jumbotron section with topic-based content cards -->
             <div class="row">
               <CardJumbotron class="col-4 d-flex justify-content-between" 
               v-for="(element, index) in topicCard" :key="index" :topic="element"/>
           </div>
 
+        <!-- Posts collection section -->
           <div class="row">
+            <!-- Popular posts section -->
             <div class="col-4 posts_collection">
               <h6 class="h6_style">Popular posts</h6>
               <div v-for="(element, index) in popularPostsCollection" :key="index">
@@ -18,6 +21,7 @@
               </div>
             </div>
 
+            <!-- Recent posts section -->
             <div class="col-4 posts_collection">
                 <h6 class="h6_style">Recent posts</h6>
                 <div v-for="(element, index) in recentPostsCollection" :key="index">
@@ -29,6 +33,7 @@
               </div>
             </div>
 
+            <!-- Featured posts section -->
             <div class="col-4">
               <h6 class="h6_style">Featured posts</h6>
               <div class="recipe_img mb-4">
