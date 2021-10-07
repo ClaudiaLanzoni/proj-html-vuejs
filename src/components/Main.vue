@@ -70,11 +70,16 @@
         
       <div class="container">
         <div class="row">
-
+          <!-- Large posts section with content cards -->
           <CardPost class="col-9"
           v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
+          <!-- ULTIMO POST TRAVEL, card? -->
+          <div></div>
+
+          <AsideSocialMedia class="col-2"/>
         </div>
+
       </div>
 
       
@@ -84,6 +89,7 @@
 <script>
 import CardJumbotron from './CardJumbotron.vue';
 import CardPost from './CardPost.vue';
+import AsideSocialMedia from './AsideSocialMedia.vue';
 
 export default {
   name: 'Main',
@@ -92,7 +98,8 @@ export default {
   },
   components: {
     CardJumbotron,
-    CardPost
+    CardPost,
+    AsideSocialMedia
   },
   data : function () {
     return {
