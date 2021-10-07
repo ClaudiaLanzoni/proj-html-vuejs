@@ -8,7 +8,7 @@
           </div>
 
         <!-- Posts collection section -->
-          <div class="row">
+          <div class="row mb-5">
             <!-- Popular posts section -->
             <div class="col-4 posts_collection">
               <h6 class="h6_style">Popular posts</h6>
@@ -51,6 +51,24 @@
             </div>
           </div>
       </div>
+
+      <!-- Blog's topics button section-->
+      <div class="topic_btn_wrap mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="topic_btn" 
+                v-for="(element, index) in buttonsTopicsSlider" :key="index">
+                  
+                <button type="button" class="btn btn-dark m-5">{{element.topicName}}</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
 
       
     </main>
@@ -158,6 +176,27 @@ export default {
         }
       ],
 
+      buttonsTopicsSlider : [
+        {
+          topicName : 'Gadgets'
+        },
+        {
+          topicName : 'Photography'
+        },
+        {
+          topicName : 'Lifestyle'
+        },
+        {
+          topicName : 'Fashion'
+        },
+        {
+          topicName : 'Recipes'
+        },
+        {
+          topicName : 'Travel'
+        }
+
+      ]
 
     
   }
@@ -233,5 +272,13 @@ export default {
       width: 250px;
       height: 50px;
       font-size: 10px;
+    }
+
+    .topic_btn_wrap {
+       background-color: $headerBg;
+    }
+
+    .topic_btn {
+      display: inline-block;
     }
 </style>

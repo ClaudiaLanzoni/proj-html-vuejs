@@ -28,7 +28,7 @@
             <section>
                 <nav>
                     <ul v-for="(element, index) in blog_interaction_nav" :key="index">
-                            <li>{{element}}</li>
+                        <li>{{element}}</li>
                     </ul>
                 </nav>
             </section>
