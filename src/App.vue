@@ -25,6 +25,11 @@ export default {
 <style lang="scss">
 @import'~bootstrap/scss/bootstrap';
 @import "./style/variables.scss";
+
+.h6_style {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 /*
 #app {
   background-color: white;

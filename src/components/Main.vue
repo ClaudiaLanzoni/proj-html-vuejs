@@ -8,7 +8,7 @@
 
           <div class="row">
             <div class="col-4 posts_collection">
-              <h6>Popular posts</h6>
+              <h6 class="h6_style">Popular posts</h6>
               <div v-for="(element, index) in popularPostsCollection" :key="index">
                 <img :src="element.imgPost" alt="post image">
                 <div class="caption_img_post">
@@ -19,7 +19,7 @@
             </div>
 
             <div class="col-4 posts_collection">
-                <h6>Recent posts</h6>
+                <h6 class="h6_style">Recent posts</h6>
                 <div v-for="(element, index) in recentPostsCollection" :key="index">
                   <img :src="element.imgPost" alt="post image">
                   <div class="caption_img_post">
@@ -30,14 +30,19 @@
             </div>
 
             <div class="col-4">
-                
-                  <h6>Featured posts</h6>
-                  <div  class="recipe_img">
-                    <img src="../assets/images/img/blog-66 (1).jpg" alt="recipe post image">
-                    <button class="bottom_left_topic btn btn-primary">Recipes</button>
-                    <h6 class="bottom_left_title">Tips to help you quickly prepare your lunch</h6>
-                  </div>
-                
+              <h6 class="h6_style">Featured posts</h6>
+              <div class="recipe_img mb-4">
+                <img src="../assets/images/img/blog-66 (1).jpg" alt="recipe post image">
+                <button class="bottom_left_topic btn btn-primary">Recipes</button>
+                <h6 class="bottom_left_title">Tips to help you quickly prepare your lunch</h6>
+              </div> 
+
+              <h6 class="h6_style mb-3">Featured author</h6>
+              <img class="avatar_img" src="../assets/images/img/avatar.jpg" alt="John Doe image">
+              <div class="avatar_caption_box">
+                <div class="fw-bold prova">John Doe</div>
+                <div class="prova">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+              </div>
             </div>
           </div>
       </div>
@@ -164,7 +169,7 @@ export default {
     img {
       width: 50px;
       height: 50px;
-      margin: 15px 10px 20px 0;
+      margin: 15px 10px 10px 0;
     }
 
     p {
@@ -204,13 +209,24 @@ export default {
     }
 
     .bottom_left_title {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-        color: $whiteColor;
-        font-weight: bold;
-        text-transform: capitalize;
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      color: $whiteColor;
+      font-weight: bold;
+      text-transform: capitalize;
     }
 
+    .avatar_img {
+      width: 90px;
+      height: 90px;
+      margin-right: 15px;
+    }
 
+    .avatar_caption_box {
+      display: inline-block;
+      width: 250px;
+      height: 50px;
+      font-size: 10px;
+    }
 </style>
