@@ -71,7 +71,7 @@
       <div class="container">
         <div class="row">
           <!-- Large posts section with content cards -->
-          <CardPost class="col-9"
+          <CardPost class="col-8"
           v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
           <!-- ULTIMO POST TRAVEL, card? -->
