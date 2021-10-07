@@ -3,7 +3,7 @@
       <div class="row">
 
         <!-- About section -->
-        <div class="col-2">
+        <div class="col-3">
             <h6 class="h6_style">About the blog</h6>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt error blanditiis.</p> 
@@ -35,6 +35,17 @@
         <!-- Recent comments section -->
         <div class="col-3">
 
+            <h6 class="h6_style">Recent comments</h6>
+
+            <div class="mb-3">
+                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold">lorem ipsum dolor sit amet</span> </div>
+                <div>12:55 AM Dec 19th</div>
+            </div>
+
+            <div>
+                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold">lorem ipsum dolor sit amet</span> </div>
+                <div>12:55 AM Dec 19th</div>
+            </div>
         </div>
 
         <!-- Categories section -->
@@ -45,6 +56,8 @@
                 v-for="(element, index) in categoriesList" :key="index">
                 <div class="tag_btn fw-bold text-center">{{element.categoryName}}</div>
             </div>
+
+
         </div>
     </div>
   </div>

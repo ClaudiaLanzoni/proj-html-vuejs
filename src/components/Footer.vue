@@ -8,15 +8,9 @@
 
         <div class="footer_minor_specifications_wrap">
             <div class="container">
-                <div class="row">
-                    <div class="col-2">
 
-                    </div>
-
-                    <div class="col-2">
-
-                    </div>
-                </div>
+                <FooterEnd />
+            
             </div>
         </div>
     </div>
@@ -24,6 +18,7 @@
 
 <script>
 import FooterBlogReturn from './FooterBlogReturn.vue';
+import FooterEnd from './FooterEnd.vue';
 
 export default {
     name : 'Footer',
@@ -32,12 +27,23 @@ export default {
     },
     components: {
         FooterBlogReturn,
-
+        FooterEnd
   },
 }
 </script>
 
 <style scoped lang="scss">
 @import "../style/variables.scss";
+
+.footer_main_specifications_wrap {
+    padding: 20px 0 20px 0;
+    background-color: $upperFooterBg;
+    color: $whiteColor;
+}
+
+.footer_minor_specifications_wrap {
+    background-color: $downerFooterBg;
+    color : $downerFooterText;
+}   
 
 </style>
