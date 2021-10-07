@@ -133,18 +133,6 @@ export default {
 
 }
 
-.tag_btn {
-    height: 20px;
-    width: 60px;
-    line-height: 20px;
-    background-color: $blackColor;
-    color: $whiteColor;
-    text-transform: uppercase;
-    font-size: 10px;
-    margin-left: 5px;
-    border-radius: 5px;
-}
-
 .tags_container {
     display: inline-block;
 }

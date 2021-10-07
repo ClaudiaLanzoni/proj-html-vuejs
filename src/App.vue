@@ -30,6 +30,18 @@ export default {
       font-weight: bold;
       text-transform: uppercase;
     }
+
+.tag_btn {
+    height: 20px;
+    width: 80px;
+    line-height: 20px;
+    background-color: $blackColor;
+    color: $whiteColor;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
 /*
 #app {
   background-color: white;

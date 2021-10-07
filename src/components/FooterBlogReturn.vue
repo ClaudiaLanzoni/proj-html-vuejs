@@ -3,7 +3,7 @@
       <div class="row">
 
         <!-- About section -->
-        <div class="col-4">
+        <div class="col-2">
             <h6 class="h6_style">About the blog</h6>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt error blanditiis.</p> 
@@ -14,7 +14,7 @@
         </div>
 
         <!-- Recent posts section -->
-        <div class="col-4">
+        <div class="col-3">
             <h6 class="h6_style">Recent posts</h6>
 
             <img class="my_br mb-3" src="../assets/images/img/our-office-4-square.jpg" alt="office image">
@@ -32,13 +32,19 @@
             </div>
         </div>
 
-
+        <!-- Recent comments section -->
         <div class="col-3">
 
         </div>
 
-        <div class="col-2">
+        <!-- Categories section -->
+        <div class="col-3">
+            <h6 class="h6_style">Categories</h6>
 
+            <div class="tags_container"
+                v-for="(element, index) in categoriesList" :key="index">
+                <div class="tag_btn fw-bold text-center">{{element.categoryName}}</div>
+            </div>
         </div>
     </div>
   </div>
@@ -46,12 +52,62 @@
 
 <script>
 export default {
-
+    name : 'FooterBlogReturn',
+    props : [''],
+    data : function () {
+    return {
+        categoriesList : [
+        {
+            categoryName : 'gadgets'
+        },
+        {
+            categoryName : 'photography'
+        },
+        {
+            categoryName : 'lifestyle'
+        },
+        {
+            categoryName : 'fashion'
+        },
+        {
+            categoryName : 'recipes'
+        },
+        {
+            categoryName : 'travel'
+        },
+        {
+            categoryName : 'business'
+        },
+        {
+            categoryName : 'architecture'
+        },
+        {
+            categoryName : 'reviews'
+        },
+        {
+            categoryName : 'sports'
+        },
+        {
+            categoryName : 'videos'
+        },
+        {
+            categoryName : 'technology'
+        },
+        {
+            categoryName : 'design'
+        },
+        ]
+    }
+}
 }
 </script>
 
 <style scoped lang="scss">
 @import "../style/variables.scss";
+
+    p {
+        font-size: 10px;
+    }
 
  .my_br {
     border-radius: 50%;
@@ -62,9 +118,14 @@ export default {
  .posts_wrap {
     display: inline-block;
     margin-left: 10px;
+
     div {
-        font-size: 12px;
+        font-size: 9px;
     }
+ }
+
+ .tags_container {
+     display: inline-block;
  }
 
 </style>
