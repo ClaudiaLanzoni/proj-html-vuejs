@@ -74,8 +74,8 @@
           <CardPost class="col-8"
           v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
-          <!-- ULTIMO POST TRAVEL, card? -->
-          <div></div>
+          <CardPostTravel />
+
 
           <AsideSocialMedia class="col-2"/>
         </div>
@@ -89,6 +89,7 @@
 <script>
 import CardJumbotron from './CardJumbotron.vue';
 import CardPost from './CardPost.vue';
+import CardPostTravel from './CardPostTravel.vue'
 import AsideSocialMedia from './AsideSocialMedia.vue';
 
 export default {
@@ -99,6 +100,7 @@ export default {
   components: {
     CardJumbotron,
     CardPost,
+    CardPostTravel,
     AsideSocialMedia
   },
   data : function () {
