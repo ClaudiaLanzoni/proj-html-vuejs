@@ -68,7 +68,13 @@
         </div>
       </div>
         
-      
+      <div class="container">
+        <div class="row">
+
+          <CardPost class="col-9"/>
+
+        </div>
+      </div>
 
       
     </main>
@@ -76,6 +82,7 @@
 
 <script>
 import CardJumbotron from './CardJumbotron.vue';
+import CardPost from './CardPost.vue';
 
 export default {
   name: 'Main',
@@ -84,6 +91,7 @@ export default {
   },
   components: {
     CardJumbotron,
+    CardPost
   },
   data : function () {
     return {
