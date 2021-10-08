@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between">
-                        <a v-for="(element, index) in buttonsTopicsSlider" :key="index"
-                        href="#">{{element.topicName}}</a>
+                      <a v-for="(element, index) in linksTopicsSlider" :key="index"
+                      href="#">{{element.topicName}}</a>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,9 @@ export default {
     props : ['topicTag'],
     data : function () {
         return {
-            buttonsTopicsSlider : [
+
+        linksTopicsSlider : [
+
         {
           topicName : 'Gadgets'
         },
@@ -48,22 +50,20 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 
-    
+  .topic_link_wrap {
+    background-color: $headerBg;
+    padding: 40px;
 
-      .topic_link_wrap {
-       background-color: $headerBg;
-       padding: 40px;
-
-       a {
-           border-radius: 0%;
-           font-size: 11px;
-           text-transform: uppercase;
-           font-weight: bolder;
-           padding: 12px 50px;
-           text-decoration: none;
-           color: $whiteColor;
-           background-color: $linkSlideBg;
-       }
+      a {
+        border-radius: 0%;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 12px 50px;
+        text-decoration: none;
+        color: $whiteColor;
+        background-color: $linkSlideBg;
     }
+}
 
 </style>

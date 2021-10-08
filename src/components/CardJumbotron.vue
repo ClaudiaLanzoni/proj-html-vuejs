@@ -41,6 +41,11 @@ export default {
         height: 200px;
         object-fit: cover;
         filter: brightness(50%);
+
+            &:hover {
+                border: 7px solid $whiteColor;
+                filter: none;
+            }
     }
 
     .topic_card_container {

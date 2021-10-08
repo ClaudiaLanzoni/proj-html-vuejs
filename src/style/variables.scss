@@ -1,8 +1,12 @@
+//Font import links
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 $bodyFont : 'Poppins';
+$getInTouchBoxFont : 'Shadows Into Light';
 
-//colors variables
+//Colors variables
 
 $whiteColor : white;
 $blackColor : black;
@@ -18,6 +22,6 @@ $dateCalendar : #F7F7F7;
 $postContentFont : #888888;
 
 //Footer colors
+$downerFooterBg : #1C2023;
 $upperFooterBg : #212529;
-$downerFooterBg : #666666;
 $downerFooterText : #555555;

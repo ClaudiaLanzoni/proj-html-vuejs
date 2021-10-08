@@ -120,6 +120,16 @@ export default {
 
 .footer_return_wrap {
     font-size: 10px;
+    padding: 40px 0 50px 0;
+
+        p {
+            color: $downerFooterText;
+        }
+
+        h6 {
+            font-size: 10px;
+        }
+    
 }
 
  .my_br {

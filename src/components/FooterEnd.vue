@@ -40,6 +40,10 @@ export default {
 .downer_footer_section {
     height: 70px;
     line-height: 70px;
+
+    div {
+        font-size: 10px
+    }
 }
 
 a {
