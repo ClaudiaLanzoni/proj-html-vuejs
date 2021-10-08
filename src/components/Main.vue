@@ -10,23 +10,13 @@
         </div>
       </div>
 
+      <!-- Posts collection section -->
       <PostsCollection />
 
       <!-- Blog's topics button section-->
-      <div class="topic_btn_wrap mb-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="topic_btn" 
-                v-for="(element, index) in buttonsTopicsSlider" :key="index">
-                  
-                <button type="button" class="btn btn-dark m-5">{{element.topicName}}</button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <TagsCollection />
+      
         
       <div class="container">
         <div class="row">
@@ -49,6 +39,7 @@
 <script>
 import CardJumbotron from './CardJumbotron.vue';
 import PostsCollection from './PostsCollection.vue';
+import TagsCollection from './TagsCollection.vue'
 import CardPost from './CardPost.vue';
 import CardPostTravel from './CardPostTravel.vue';
 import AsideSocialMedia from './AsideSocialMedia.vue';
@@ -61,6 +52,7 @@ export default {
   components: {
     CardJumbotron,
     PostsCollection,
+    TagsCollection,
     CardPost,
     CardPostTravel,
     AsideSocialMedia
@@ -99,28 +91,6 @@ export default {
         title : 'amazingly fresh fruit and herbs drinks for summer'
         },
         ],
-
-      buttonsTopicsSlider : [
-        {
-          topicName : 'Gadgets'
-        },
-        {
-          topicName : 'Photography'
-        },
-        {
-          topicName : 'Lifestyle'
-        },
-        {
-          topicName : 'Fashion'
-        },
-        {
-          topicName : 'Recipes'
-        },
-        {
-          topicName : 'Travel'
-        }
-
-      ],
 
       postsCard : [
         {
@@ -175,16 +145,9 @@ export default {
 @import "../style/variables.scss";
 
 
-    .topic_btn_wrap {
-       background-color: $headerBg;
-    }
-
-    .topic_btn {
-      display: inline-block;
-    }
-
     .jumbotron_container {
       padding: 50px 0 20px 0;
       background-color: $jumbotronBg;
     }
+
 </style>
