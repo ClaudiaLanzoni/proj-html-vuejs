@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Posts collection section -->
     <div class="container">
         <div class="row mb-5">
         <!-- Popular posts section -->
@@ -119,23 +118,21 @@ export default {
       height: 50px;
       margin: 15px 10px 10px 0;
     }
+  }
 
-    p {
+  .title_style {
+    font-size: 12px;
+  }
 
-      font-size: 12px;
-    }
-
-    div {
-      font-size: 10px;
-    }
+  .date_style {
+    color: $dateFont;
+    font-size: 9px;
   }
 
     .caption_img_post {
       display: inline-block;
     }
 
-
-    
     .recipe_img {
         position: relative;
         margin-top: 20px;

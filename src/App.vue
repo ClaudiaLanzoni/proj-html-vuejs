@@ -32,23 +32,26 @@ export default {
   font-family: $bodyFont;
 
 
-.h6_style {
-      font-weight: bold;
+  .h6_style {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+  .tag_btn {
+      height: 20px;
+      width: 80px;
+      line-height: 20px;
+      background-color: $blackColor;
+      color: $whiteColor;
       text-transform: uppercase;
+      font-size: 10px;
+      margin-left: 5px;
+      border-radius: 5px;
+  }
+  
+   .blue_text {
+      color: $headerBg;
     }
-
-.tag_btn {
-    height: 20px;
-    width: 80px;
-    line-height: 20px;
-    background-color: $blackColor;
-    color: $whiteColor;
-    text-transform: uppercase;
-    font-size: 10px;
-    margin-left: 5px;
-    border-radius: 5px;
-}
-
 
 }
 

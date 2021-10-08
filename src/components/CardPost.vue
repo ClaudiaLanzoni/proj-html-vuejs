@@ -9,22 +9,30 @@
 
         <h3 class="mb-3">{{post.postTitle}}</h3>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?</p>
+        <p>{{post.textContent}}</p>
 
         <!-- autore, commenti -->
         <div>
 
         </div>
+
+        
+
     </div>
 </template>
 
 <script>
+
+
 export default {
     name : 'CardPost',
     props : ['post'],
+    components : {
+ 
+    },
     data : function () {
         return {
-     
+        
     }
     }
 }

@@ -1,21 +1,19 @@
 <template>
-    <div class="position-relative">
-        <div class="absolute_positioning_div">
+    <div>
+        <div>
 
             <!--Twitter section-->
             <div class="mb-5">
                 <h6 class="h6_style">Latest from Twitter</h6>
-                <div>
-                    <span>&spades;</span>
+                <div class="mb-4">
                     <div>If you have any suggestions for the next updates, let us know.</div>
-                    <div>01:05 PM Sep 18th</div>
+                    <div><span class="blue_text">01:05 PM Sep 18th</span></div>
                 </div>
 
 
                 <div>
-                    <span>&spades;</span>
                     <div>We have just updated Porto Admin. Check the changelog for more information.</div>
-                    <div>01:04 PM Sep 18th</div>
+                    <div><span class="blue_text">01:04 PM Sep 18th</span></div>
                 </div>
             </div>
 
@@ -47,9 +45,9 @@
                 <h6 class="h6_style">Find us on facebook</h6>
 
                 <!-- vertical lign before theme -->
-                <div></div>
+                <div class="vertical_lign"></div>
 
-                <p>Okler Themes</p>
+                <p class="d-inline"><span class="blue_text">Okler Themes</span></p>
             </div>
         </div>
       
@@ -110,32 +108,31 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 
-.absolute_positioning_div {
-    width: 340px;
-    height: 1000px;
-    border: 3px solid black;
-    position: absolute;
-    top: -2550px;
-    left: 200px;
 
     h6  {
         margin-bottom: 20px;
     }
-}
 
-.multiple_img_container {
-    
-    img {
-        width: 100px;
-        height: 100px;
+    .multiple_img_container {
+        
+        img {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+    }
+
+    .tags_container {
         display: inline-block;
     }
 
-}
-
-.tags_container {
-    display: inline-block;
-}
-
+    .vertical_lign {
+        height: 30px;
+        width: 4px;
+        background-color: rgb(190, 181, 181);
+        display: inline-block;
+        margin-right: 20px;
+    }
 
 </style>

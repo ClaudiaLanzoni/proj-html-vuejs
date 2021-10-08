@@ -2,8 +2,8 @@
   <div>
         <img :src="popularPost.imgPost" alt="post image">
         <div class="caption_img_post">
-            <div>{{popularPost.titlePost}}</div>
-            <div>{{popularPost.datePost}}</div>
+            <div class="title_style">{{popularPost.titlePost}}</div>
+            <div class="date_style">{{popularPost.datePost}}</div>
         </div>
   </div>
 </template>

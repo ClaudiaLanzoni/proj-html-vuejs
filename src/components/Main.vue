@@ -20,14 +20,16 @@
         
       <div class="container">
         <div class="row">
-          <!-- Large posts section with content cards -->
-          <CardPost class="col-8"
-          v-for="(element, index) in postsCard" :key="index" :post="element"/>
+          <div class="col-8">
+          <!-- Content cards section -->
+            <CardPost
+            v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
-          <CardPostTravel 
-          v-for="(element, index) in imgCollection" :key="index" :smallimg="element"/>
+          <!-- Larger Travel content card -->
+            <CardPostTravel />
+          </div>
 
-          <AsideSocialMedia class="col-2"/>
+          <AsideSocialMedia class="col-4"/>
         </div>
 
       </div>
@@ -95,46 +97,25 @@ export default {
       postsCard : [
         {
           img : require('../assets/images/img/blog-54.jpg'),
-          postTitle : 'How to make friends as a grown-up'
+          postTitle : 'How to make friends as a grown-up',
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
         },
         {
           img : require('../assets/images/img/blog-55 (1).jpg'),
-          postTitle : 'Simple Ways to Have a Pretty Face'
+          postTitle : 'Simple Ways to Have a Pretty Face',
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
         },
         {
           img : require('../assets/images/img/blog-56 (1).jpg'),
-          postTitle : 'Ranking the greatest players in basketball'
+          postTitle : 'Ranking the greatest players in basketball',
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
         },
         {
           img : require('../assets/images/img/blog-58 (1).jpg'),
-          postTitle : 'Top Camper Trailer Towing Tips'
+          postTitle : 'Top Camper Trailer Towing Tips',
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
         },
-        {
-          img : require('../assets/images/img/blog-58 (1).jpg'),
-          postTitle : '10 Best Travel Tips After 5 Years Travelling The World'
-        }
       ],
-
-      imgCollection : [
-      {
-          img : require('../assets/images/img/blog-29.jpg'),
-      },
-      {
-          img : require('../assets/images/img/blog-16.jpg'),
-      },
-      {
-          img : require('../assets/images/img/blog-20.jpg'),
-      },
-      {
-          img : require('../assets/images/img/blog-23.jpg'),
-      },
-      {
-          img : require('../assets/images/img/blog-29.jpg'),
-      },
-      {
-          img : require('../assets/images/img/blog-40.jpg'),
-      },
-      ]
   }
 }
 }
