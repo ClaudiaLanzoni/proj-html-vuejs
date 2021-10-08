@@ -115,8 +115,8 @@ export default {
     height: 1000px;
     border: 3px solid black;
     position: absolute;
-    top: -2030px;
-    left: 800px;
+    top: -2550px;
+    left: 200px;
 
     h6  {
         margin-bottom: 20px;
