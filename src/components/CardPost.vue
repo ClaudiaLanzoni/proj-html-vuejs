@@ -1,7 +1,6 @@
 <template>
     <div class="post_container mb-5">
         <img class="img-fluid mb-3" :src="post.img" alt="post image">
-
         
         <!--pagina calendario-->
         <div>

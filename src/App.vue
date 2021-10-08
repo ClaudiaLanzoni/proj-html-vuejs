@@ -26,6 +26,12 @@ export default {
 @import'~bootstrap/scss/bootstrap';
 @import "./style/variables.scss";
 
+#app {
+ 
+ 
+  font-family: $bodyFont;
+
+
 .h6_style {
       font-weight: bold;
       text-transform: uppercase;
@@ -42,9 +48,8 @@ export default {
     margin-left: 5px;
     border-radius: 5px;
 }
-/*
-#app {
-  background-color: white;
+
+
 }
-*/
+
 </style>

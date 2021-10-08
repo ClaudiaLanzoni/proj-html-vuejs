@@ -4,35 +4,46 @@
         <!-- Common blog specifications menu section-->
         <div class="blog_specifications_nav_wrap">
             <div class="container">
-                <section> 
-                    <nav> 
-                        <p>Everything about Lifestyle, Travel and Gadgets!</p>
+                <div class="row">
+                    <div class="col-12">  
+                        <nav> 
+                            <p class="text-white">Everything about Lifestyle, Travel and Gadgets!</p>
 
-                        <ul v-for="(element, index) in blog_specification_nav" :key="index">
-                            <li>{{element}}</li>
-                        </ul>
-                    </nav>
-
-                </section>
+                            <ul v-for="(element, index) in blog_specification_nav" :key="index">
+                                <li class="text-white">{{element.command}}</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>   
         </div> 
 
         <!-- Blog logo section -->
         <div class="container">
-            
-            <section> 
-                <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
-            </section>
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="header_logo_section">
+                        <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
+                    </div>
+                </div>
+            </div>
+         </div>    
 
         <!-- Blog interaction menu section  -->
-            <section>
-                <nav>
-                    <ul v-for="(element, index) in blog_interaction_nav" :key="index">
-                        <li>{{element}}</li>
-                    </ul>
-                </nav>
-            </section>
+        <div class="menu_wrap">
+            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-inline" v-for="(element, index) in blog_interaction_nav" :key="index">
+                                <h6 class="h6_style">{{element.link}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+       
     </header>
 
     
@@ -46,8 +57,47 @@ export default {
     },
     data : function () {
         return {
-        blog_specification_nav: ['sign in', 'contact us', 'about us', 'contact us', 'buy now'],
-        blog_interaction_nav : ['home', 'elements', 'features', 'pages', 'portfolio', 'blog', 'shop']
+            blog_specification_nav: [
+            {
+                command : 'sign in'
+            },
+            {
+                command : 'contact us'
+            },
+            {
+                command : 'about us'
+            },
+            {
+                command : 'contact us'
+            },
+            {
+                command : 'buy now'
+            }
+            ],
+
+            blog_interaction_nav : [
+            {
+                link : 'home'
+            },
+            {
+                link : 'elements'  
+            },
+            {
+                link : 'features'
+            },
+            {
+                link : 'pages'
+            },
+            {
+                link : 'portfolio'
+            },
+            {
+                link : 'blog',
+            },
+            {
+                link : 'shop'
+            }
+            ]
         }
     }
 }
@@ -57,7 +107,7 @@ export default {
 @import "../style/variables.scss";
 
     header {
-        margin-bottom: 50px
+        font-size: 12px;
     }
 
     ul {
@@ -72,5 +122,31 @@ export default {
 
     .blog_specifications_nav_wrap {
         background-color: $headerBg;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    h6 {
+        display: inline-block;
+        margin-right: 35px;
+
+        &:hover {
+            color: $headerBg;
+        }
+    }
+
+    .header_logo_section {
+        height: 50px;
+        line-height: 100px;
+
+        img {
+            width: 7%;
+        }
+    }
+
+    .menu_wrap {
+        height: 50px;
+        line-height: 50px;
+        border-top: 1px solid rgb(199, 191, 191);
     }
 </style>

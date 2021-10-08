@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="footer_return_wrap">
       <div class="row">
 
         <!-- About section -->
@@ -14,7 +14,7 @@
         </div>
 
         <!-- Recent posts section -->
-        <div class="col-3">
+        <div class="col-4">
             <h6 class="h6_style">Recent posts</h6>
 
             <img class="my_br mb-3" src="../assets/images/img/our-office-4-square.jpg" alt="office image">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Recent comments section -->
-        <div class="col-3">
+        <div class="col-2">
 
             <h6 class="h6_style">Recent comments</h6>
 
@@ -54,7 +54,7 @@
 
             <div class="tags_container"
                 v-for="(element, index) in categoriesList" :key="index">
-                <div class="tag_btn fw-bold text-center">{{element.categoryName}}</div>
+                <div class="tag_btn cat_tag fw-bold text-center">{{element.categoryName}}</div>
             </div>
 
 
@@ -118,9 +118,9 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 
-    p {
-        font-size: 10px;
-    }
+.footer_return_wrap {
+    font-size: 10px;
+}
 
  .my_br {
     border-radius: 50%;
@@ -132,13 +132,14 @@ export default {
     display: inline-block;
     margin-left: 10px;
 
-    div {
-        font-size: 9px;
-    }
  }
 
  .tags_container {
-     display: inline-block;
+    display: inline-block;
+ }
+
+ .cat_tag {
+    margin-bottom: 5px;
  }
 
 </style>

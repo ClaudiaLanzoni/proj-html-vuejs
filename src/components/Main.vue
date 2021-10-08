@@ -1,12 +1,16 @@
 <template>
     <main>
-      <div class="container">
+      <div class="jumbotron_container mb-5">
+        <div class="container">
         <!-- Jumbotron section with topic-based content cards -->
             <div class="row">
               <CardJumbotron class="col-4 d-flex justify-content-between" 
               v-for="(element, index) in topicCard" :key="index" :topic="element"/>
-          </div>
+            </div>
+        </div>
+      </div>
 
+      <div class="container">
         <!-- Posts collection section -->
           <div class="row mb-5">
             <!-- Popular posts section -->
@@ -20,7 +24,7 @@
                 </div>
               </div>
             </div>
-
+      
             <!-- Recent posts section -->
             <div class="col-4 posts_collection">
                 <h6 class="h6_style">Recent posts</h6>
@@ -50,7 +54,8 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
+      
 
       <!-- Blog's topics button section-->
       <div class="topic_btn_wrap mb-5">
@@ -74,8 +79,8 @@
           <CardPost class="col-8"
           v-for="(element, index) in postsCard" :key="index" :post="element"/>
 
-          <CardPostTravel />
-
+          <CardPostTravel 
+          v-for="(element, index) in imgCollection" :key="index" :smallimg="element"/>
 
           <AsideSocialMedia class="col-2"/>
         </div>
@@ -233,7 +238,31 @@ export default {
           img : require('../assets/images/img/blog-58 (1).jpg'),
           postTitle : 'Top Camper Trailer Towing Tips'
         },
+        {
+          img : require('../assets/images/img/blog-58 (1).jpg'),
+          postTitle : '10 Best Travel Tips After 5 Years Travelling The World'
+        }
+      ],
 
+      imgCollection : [
+      {
+          img : require('../assets/images/img/blog-29.jpg'),
+      },
+      {
+          img : require('../assets/images/img/blog-16.jpg'),
+      },
+      {
+          img : require('../assets/images/img/blog-20.jpg'),
+      },
+      {
+          img : require('../assets/images/img/blog-23.jpg'),
+      },
+      {
+          img : require('../assets/images/img/blog-29.jpg'),
+      },
+      {
+          img : require('../assets/images/img/blog-40.jpg'),
+      },
       ]
   }
 }
@@ -316,5 +345,10 @@ export default {
 
     .topic_btn {
       display: inline-block;
+    }
+
+    .jumbotron_container {
+      padding: 50px 0 20px 0;
+      background-color: $jumbotronBg;
     }
 </style>

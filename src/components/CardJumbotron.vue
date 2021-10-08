@@ -65,5 +65,6 @@ export default {
         color: $whiteColor;
         font-weight: bold;
         text-transform: capitalize;
+        padding-right: 5px;
     }
 </style>
