@@ -1,50 +1,51 @@
 <template>
-        <header>
+    <header>
 
-        <!-- Common blog specifications menu section-->
-        <div class="blog_specifications_nav_wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">  
-                        <nav> 
-                            <p class="text-white">Everything about Lifestyle, Travel and Gadgets!</p>
-
-                            <ul v-for="(element, index) in blog_specification_nav" :key="index">
-                                <li class="text-white">{{element.command}}</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>   
-        </div> 
-
-        <!-- Blog logo section -->
+    <!-- Common blog specifications menu section-->
+    <div class="blog_specifications_nav_wrap">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-5">
-                    <div class="header_logo_section">
-                        <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
+                <div class="col-12">  
+                    <nav> 
+                        <p class="text-white">Everything about Lifestyle, Travel and Gadgets!</p>
+
+                        <ul v-for="(element, index) in blog_specification_nav" :key="index">
+                            <li class="text-white">{{element.command}}</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>   
+    </div> 
+
+    <!-- Blog logo section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <div class="header_logo_section">
+                    <img src="../assets/images/img/logo-default-slim.png" alt="Porto logo">
+                </div>
+            </div>
+        </div>
+        </div>    
+
+    <!-- Blog interaction menu section  -->
+    <div class="menu_wrap">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-inline" v-for="(element, index) in blog_interaction_nav" :key="index">
+                            <h6 class="h6_style">{{element.link}}</h6>
+                        </div>
+                        <div class="glass_icon"><a href="#">&#x1f50d;</a></div>
                     </div>
                 </div>
             </div>
-         </div>    
-
-        <!-- Blog interaction menu section  -->
-        <div class="menu_wrap">
-            <nav>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="d-inline" v-for="(element, index) in blog_interaction_nav" :key="index">
-                                <h6 class="h6_style">{{element.link}}</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-       
-    </header>
+        </nav>
+    </div>
+    
+</header>
 
     
 </template>
@@ -148,5 +149,12 @@ export default {
         height: 50px;
         line-height: 50px;
         border-top: 1px solid rgb(199, 191, 191);
+    }
+
+    .glass_icon {
+        float: right;
+            a {
+                text-decoration: none;
+            }
     }
 </style>

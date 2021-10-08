@@ -16,7 +16,8 @@
       <!-- Blog's topics button section-->
       <TagsCollection />
       
-        
+      
+    <!-- Main cards section -->
       <div class="container">
         <div class="row">
           <div class="col-8">
@@ -26,6 +27,15 @@
 
           <!-- Larger Travel content card -->
             <CardPostTravel />
+
+          <!-- Bottom pages section -->
+            <div class="pages_box mb-4">
+                <a href="#">&lt;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&gt;</a>
+            </div>
           </div>
 
           <AsideSocialMedia class="col-4"/>
@@ -145,9 +155,34 @@ export default {
 @import "../style/variables.scss";
 
 
-    .jumbotron_container {
-      padding: 50px 0 20px 0;
-      background-color: $jumbotronBg;
+  .jumbotron_container {
+    padding: 50px 0 20px 0;
+    background-color: $jumbotronBg;
+  }
+
+  .pages_box {
+
+    height: 100px;
+    border-top : 1px solid $dateFont;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      height: 40px;
+      width: 30px;
+      line-height: 40px;
+      border: 2px solid $dateCalendar;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+
+        &:hover,
+        &:active {
+          background-color: $headerBg;
+          color: $whiteColor;
+        }
     }
+  }
 
 </style>
