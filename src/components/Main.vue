@@ -14,7 +14,6 @@
       <PostsCollection />
 
       <!-- Blog's topics button section-->
-      
       <TagsCollection />
       
         
@@ -98,22 +97,42 @@ export default {
         {
           img : require('../assets/images/img/blog-54.jpg'),
           postTitle : 'How to make friends as a grown-up',
-          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?',
+          date : '12',
+          month : 'jan',
+          author : 'John Doe',
+          topic : 'Lifestyle, Travel',
+          comments : '12'
         },
         {
           img : require('../assets/images/img/blog-55 (1).jpg'),
           postTitle : 'Simple Ways to Have a Pretty Face',
-          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?',
+          date : '12',
+          month : 'jan',
+          author : 'John Doe',
+          topic : 'Photography, Travel',
+          comments : '12'
         },
         {
           img : require('../assets/images/img/blog-56 (1).jpg'),
           postTitle : 'Ranking the greatest players in basketball',
-          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?',
+          date : '12',
+          month : 'jan',
+          author : 'John Doe',
+          topic : 'Sports, Business',
+          comments : '12'
         },
         {
           img : require('../assets/images/img/blog-58 (1).jpg'),
           postTitle : 'Top Camper Trailer Towing Tips',
-          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?'
+          textContent : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, in inventore? Impedit ex velit fuga dignissimos qui, dolorum quod eos ut eaque eveniet ea, aliquam porro, non deleniti? Rem, reprehenderit?',
+          date : '12',
+          month : 'jan',
+          author : 'John Doe',
+          topic : 'Travel, Lifestyle',
+          comments : '12'
         },
       ],
   }

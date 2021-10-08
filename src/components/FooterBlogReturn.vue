@@ -38,12 +38,12 @@
             <h6 class="h6_style">Recent comments</h6>
 
             <div class="mb-3">
-                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold">lorem ipsum dolor sit amet</span> </div>
+                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold blue_text">lorem ipsum dolor sit amet</span> </div>
                 <div>12:55 AM Dec 19th</div>
             </div>
 
             <div>
-                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold">lorem ipsum dolor sit amet</span> </div>
+                <div><span class="fw-bold">John Doe</span> commented on <span class="fw-bold blue_text">lorem ipsum dolor sit amet</span> </div>
                 <div>12:55 AM Dec 19th</div>
             </div>
         </div>

@@ -3,7 +3,7 @@
         <div>
 
             <!--Twitter section-->
-            <div class="mb-5">
+            <div class="mb-5 twitter_section">
                 <h6 class="h6_style">Latest from Twitter</h6>
                 <div class="mb-4">
                     <div>If you have any suggestions for the next updates, let us know.</div>
@@ -111,6 +111,12 @@ export default {
 
     h6  {
         margin-bottom: 20px;
+    }
+
+    .twitter_section {
+        div {
+            font-size: 12px;
+        }
     }
 
     .multiple_img_container {
