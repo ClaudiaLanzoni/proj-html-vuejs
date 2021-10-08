@@ -9,7 +9,6 @@
                     <div>Get in Touch</div>
                 </div>
                 
-
                 <FooterBlogReturn />
             </div>
         </div>

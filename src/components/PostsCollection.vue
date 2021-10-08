@@ -18,16 +18,16 @@
         <div class="col-4">
             <h6 class="h6_style">Featured posts</h6>
             <div class="recipe_img mb-4">
-            <img src="../assets/images/img/blog-66 (1).jpg" alt="recipe post image">
-            <button class="bottom_left_topic btn btn-primary">Recipes</button>
-            <h6 class="bottom_left_title">Tips to help you quickly prepare your lunch</h6>
+              <img src="../assets/images/img/blog-66 (1).jpg" alt="recipe post image">
+              <button class="bottom_left_topic btn btn-primary">Recipes</button>
+              <h6 class="bottom_left_title">Tips to help you quickly prepare your lunch</h6>
             </div> 
 
             <h6 class="h6_style mb-3">Featured author</h6>
             <img class="avatar_img" src="../assets/images/img/avatar.jpg" alt="John Doe image">
             <div class="avatar_caption_box">
-            <div class="fw-bold prova">John Doe</div>
-            <div class="prova">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+              <div class="fw-bold prova">John Doe</div>
+              <div class="prova">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
             </div>
         </div>
         </div>
@@ -168,6 +168,7 @@ export default {
       width: 90px;
       height: 90px;
       margin-right: 15px;
+      margin-top: -10px;
     }
 
     .avatar_caption_box {

@@ -1,8 +1,8 @@
 <template>
     <main>
+       <!-- Jumbotron section with topic-based content cards -->
       <div class="jumbotron_container mb-5">
         <div class="container">
-        <!-- Jumbotron section with topic-based content cards -->
             <div class="row">
               <CardJumbotron class="col-4 d-flex justify-content-between" 
               v-for="(element, index) in topicCard" :key="index" :topic="element"/>
@@ -153,7 +153,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../style/variables.scss";
-
 
   .jumbotron_container {
     padding: 50px 0 20px 0;
